@@ -1,42 +1,115 @@
 /* General  */
-*{
+* {
     box-sizing: border-box;
     font-family: Poppins;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.container{
-    width: 1000px;
+
+.container {
+    width: 1150px;
     margin: 0 auto;
 }
+
 /* header */
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
 
 header .container {
     display: flex;
     justify-content: space-between;
 }
-header .container div{
-    padding: 15px 0;
+
+header .container div {
+    padding: 25px 0;
 }
-/* header logo */
+
 /* header navbar */
-ul{
+
+ul {
     padding: 0;
     margin: 0;
 }
-ul li{
-    margin-left:15px;
+
+ul li {
+    margin-left: 30px;
     list-style: none;
     display: inline;
 }
-ul li a{
-    color:black;
+
+ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
 }
-ul li a:hover{
-    color: blueviolet;
+
+ul li a:hover {
+    color: #8490ff;
+}
+
+/* This is me and About me similar */
+
+.ThisIsMe .container,
+.AboutMe .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FirstParagraph {
+    font-size: 18px;
+}
+
+.SecondParagraph {
+    margin: 0;
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+}
+
+.ThirdParagraph {
+    font-size: 17px;
+    font-weight: 300;
+    color: #808080;
+    margin-bottom: 50px;
+}
+
+.DN-VFD-Button {
+    color: white;
+    background-image: linear-gradient(to right, #8490ff, #4eb4fc);
+    padding: 15px 40px;
+}
+.DN-VFD-Button:hover {
+    cursor: pointer;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
+}
+/* this is me */
+
+.tim-left,
+.tim-right {
+    width: 48%;
+}
+
+.ThisIsMe {
+    background-color: rgb(244, 244, 244);
+}
+
+.tim-left .SecondParagraph {
+    font-size: 70px;
+}
+/* About me */
+.AboutMe{
+    margin-top: 50px;
+}
+.AM-right .SecondParagraph {
+    font-size: 57px;
 }
