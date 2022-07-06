@@ -31,7 +31,7 @@ header .container {
 }
 
 header .container div {
-    padding: 25px 0;
+    padding: 18px 0;
 }
 
 /* header navbar */
@@ -49,7 +49,7 @@ ul li {
 
 ul li a {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(34, 34, 34);
 }
 
@@ -66,17 +66,17 @@ ul li a:hover {
     align-items: center;
 }
 
-.FirstParagraph {
+.TextSize1 {
     font-size: 18px;
 }
 
-.SecondParagraph {
+.TextSize2 {
     margin: 0;
     color: rgb(50, 50, 50);
     font-weight: 600;
 }
 
-.ThirdParagraph {
+.TextSize3 {
     font-size: 17px;
     font-weight: 300;
     color: #808080;
@@ -103,13 +103,26 @@ ul li a:hover {
     background-color: rgb(244, 244, 244);
 }
 
-.tim-left .SecondParagraph {
+.tim-left .TextSize2 {
     font-size: 70px;
 }
 /* About me */
 .AboutMe{
     margin-top: 50px;
 }
-.AM-right .SecondParagraph {
+.AM-right *{
+    vertical-align: top;
+}
+.AM-right .TextSize2 {
     font-size: 57px;
+}
+/* services */
+.services{
+    text-align: center;
+}
+.services p:first-of-type{
+    margin-top: 50px;
+}
+.services .TextSize2{
+    font-size: 50px;
 }
