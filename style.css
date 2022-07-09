@@ -17,6 +17,9 @@ a {
     width: 1150px;
     margin: 0 auto;
 }
+p{
+    margin: 0;
+}
 
 /* header */
 header {
@@ -71,7 +74,6 @@ ul li a:hover {
 }
 
 .TextSize2 {
-    margin: 0;
     color: rgb(50, 50, 50);
     font-weight: 600;
 }
@@ -92,6 +94,7 @@ ul li a:hover {
     cursor: pointer;
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
 }
+
 /* this is me */
 
 .tim-left,
@@ -106,6 +109,7 @@ ul li a:hover {
 .tim-left .TextSize2 {
     font-size: 70px;
 }
+
 /* About me */
 .AboutMe{
     margin-top: 50px;
@@ -116,13 +120,65 @@ ul li a:hover {
 .AM-right .TextSize2 {
     font-size: 57px;
 }
-/* services */
-.services{
+
+/* services title */
+.services-title{
     text-align: center;
 }
-.services p:first-of-type{
+.services-title p:first-of-type{
     margin-top: 50px;
 }
-.services .TextSize2{
+.services-title .TextSize2{
     font-size: 50px;
+}
+/* servies info */
+.services-info .container {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* services */
+.services{
+    width: 30%;
+    height: 30%;
+}
+.services h3{
+    color: black;
+    font-weight:600;
+}
+.services p{
+    color: #808080;
+    font-size: 17px;
+}
+.services h3:hover{
+    cursor: pointer;
+    color: #8490ff;
+
+}
+
+/* stats */
+.stats-box {
+    margin: 50px 0;
+    background-image: linear-gradient(to right, #8490ff, #4eb4fc);
+}
+.stats-box .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.stats-box p{ 
+    color: white;
+    text-align: center;
+}
+.stats-box div p:first-of-type{
+    font-size:40px;
+    font-weight: 700;
+    color: white;
+}
+.stats-box div p:last-of-type{
+    font-size:17px;
+}
+.stats-box div{
+    padding: 20px;
 }
