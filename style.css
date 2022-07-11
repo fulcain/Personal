@@ -27,7 +27,9 @@ p{
 header {
     background-color: white;
     position: sticky;
+    z-index: 2;
     top: 0;
+    box-shadow: 1px 1px 10px  rgba(0, 0, 0, 0.142);
 }
 
 header .container {
@@ -36,7 +38,7 @@ header .container {
 }
 
 header .container div {
-    padding: 18px 0;
+    padding: 20px 0;
 }
 
 /* header navbar */
@@ -54,7 +56,7 @@ ul li {
 
 ul li a {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(34, 34, 34);
 }
 
@@ -229,7 +231,7 @@ ul li a:hover {
     font-size: 17px;
 }
 
-.fp-titles a:active{
+.fp-titles a::selection{
     color: #8490ff;
 }
 
@@ -252,4 +254,99 @@ ul li a:hover {
     padding: 0;
     color: #808080;
 }
+
+.fp-images img{
+    width: 100%;
+    display: block;
+}
+
+.fp-images img:hover{
+    transition: 1s;
+    background-image: linear-gradient(to right, #8490ff, #4eb4fc);
+    cursor: pointer;
+}
+
+/* Plans */
+
+.plans{
+    margin-top: 190px;
+    text-align: center;
+}
+
+.type-of-plans-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.type-of-plans{
+    background-color: rgb(221, 219, 219);
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.type-of-plans:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, #8490ff, #4eb4fc);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.type-of-plans:hover p{
+    color: white;
+}
+
+.type-of-plans:hover .plans-price{
     
+   background-color: white;
+   color: black;
+}
+.plans-name{
+    margin-top: 30px;
+    font-size: 25px;
+}
+.plans-price{
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(21, 21, 21);
+}
+.plans-description{
+    margin-top: 30px;
+}
+.plans-description p {
+    font-size: 17px;
+    color: #808080;
+    padding: 20px;
+    border-bottom: 1px solid rgb(186, 185, 185);
+}
+.plans p.TextSize1{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.plans-outer-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: rgb(202, 202, 202) ;
+}
+.plans-inner-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color:rgb(221, 219, 219);
+}
+
+.plans-inner-box p{
+    font-size: 50px;
+}
+
