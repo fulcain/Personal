@@ -22,6 +22,7 @@ p{
 }
 
 /* header */
+
 header {
     background-color: white;
     position: sticky;
@@ -111,26 +112,33 @@ ul li a:hover {
 }
 
 /* About me */
+
 .AboutMe{
     margin-top: 50px;
 }
+
 .AM-right *{
     vertical-align: top;
 }
+
 .AM-right .TextSize2 {
     font-size: 57px;
 }
 
 /* services title */
+
 .services-title{
     text-align: center;
 }
+
 .services-title p:first-of-type{
     margin-top: 50px;
 }
+
 .services-title .TextSize2{
     font-size: 50px;
 }
+
 /* servies info */
 .services-info .container {
     text-align: center;
@@ -138,60 +146,88 @@ ul li a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 /* services */
+
 .services{
     width: 30%;
     height: 30%;
 }
+
 .services h3{
     color: black;
     font-weight:600;
 }
+
 .services p{
     color: #808080;
     font-size: 17px;
 }
+
 .services h3:hover{
     cursor: pointer;
     color: #8490ff;
-
 }
 
 /* stats */
+
 .stats-box {
     margin: 50px 0;
     background-image: linear-gradient(to right, #8490ff, #4eb4fc);
 }
+
 .stats-box .container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .stats-box p{ 
     color: white;
     text-align: center;
 }
+
 .stats-box div p:first-of-type{
     font-size:45px;
     font-weight: 700;
     color: white;
 }
+
 .stats-box div p:last-of-type{
     font-size:17px;
 }
+
 .stats-box div{
     padding: 30px;
 }
+
 /* lates featured projects */
+
 .featured-projects{
     text-align: center;
 }
+
 .featured-projects p:first-of-type{
     font-weight: 700;
     font-size: 55px;
 }
+
 .featured-projects p:last-of-type{
     padding: 15px 0;
     font-size: 17px;
     color: #808080;
+}
+
+.fp-descriptions{
+    margin-bottom: 40px;
+}
+
+.fp-titles a{
+    color: black;
+    margin: 20px;
+    font-size: 17px;
+}
+
+.fp-titles a:active{
+    color: #8490ff;
 }
