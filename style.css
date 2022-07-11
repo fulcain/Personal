@@ -298,9 +298,12 @@ ul li a:hover {
 }
 
 .type-of-plans:hover .plans-price{
-    
+    content: "text";
    background-color: white;
    color: black;
+}
+.type-of-plans:hover .plans-price::target-text{
+    content: "text";
 }
 .plans-name{
     margin-top: 30px;
