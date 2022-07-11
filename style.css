@@ -172,7 +172,7 @@ ul li a:hover {
     text-align: center;
 }
 .stats-box div p:first-of-type{
-    font-size:40px;
+    font-size:45px;
     font-weight: 700;
     color: white;
 }
@@ -180,5 +180,18 @@ ul li a:hover {
     font-size:17px;
 }
 .stats-box div{
-    padding: 20px;
+    padding: 30px;
+}
+/* lates featured projects */
+.featured-projects{
+    text-align: center;
+}
+.featured-projects p:first-of-type{
+    font-weight: 700;
+    font-size: 55px;
+}
+.featured-projects p:last-of-type{
+    padding: 15px 0;
+    font-size: 17px;
+    color: #808080;
 }
