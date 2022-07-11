@@ -5,8 +5,8 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
 a {
@@ -18,7 +18,8 @@ a {
     margin: 0 auto;
 }
 p{
-    margin: 0;
+    padding:0;
+    margin:0;
 }
 
 /* header */
@@ -231,3 +232,24 @@ ul li a:hover {
 .fp-titles a:active{
     color: #8490ff;
 }
+
+.fp-images{
+    margin-top: 30px;   
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px 5px;
+}
+
+.fp-images p:first-of-type{
+    margin-top: 15px;
+    color: black;
+    font-size: 25px;    
+}
+
+.fp-images p:last-of-type{
+    padding: 0;
+    color: #808080;
+}
+    
