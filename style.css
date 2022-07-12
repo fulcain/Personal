@@ -245,9 +245,28 @@ ul li a:hover {
 }
 
 .fp-titles a {
+    position: relative;
     color: black;
     margin: 20px;
     font-size: 15px;
+}
+.fp-titles a:first-of-type{
+    color: #8490ff;
+}
+.fp-titles a::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background:black;
+    transform: scale(0 , 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease;
+}
+.fp-titles a:hover::after{
+    transform: scale(1, 1); 
 }
 
 .fp-titles a::selection {
