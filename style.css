@@ -244,15 +244,18 @@ ul li a:hover {
     margin-bottom: 40px;
 }
 
+.fp-titles a:first-of-type{
+    color: #8490ff;
+}
+
 .fp-titles a {
     position: relative;
     color: black;
     margin: 20px;
     font-size: 15px;
 }
-.fp-titles a:first-of-type{
-    color: #8490ff;
-}
+
+
 .fp-titles a::after{
     content: '';
     position: absolute;
@@ -269,13 +272,7 @@ ul li a:hover {
     transform: scale(1, 1); 
 }
 
-.fp-titles a::selection {
-    color: #8490ff;
-}
 
-.fp-titles a:hover {
-
-}
 .fp-images {
     margin-top: 30px;
     text-align: center;
