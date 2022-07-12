@@ -55,8 +55,8 @@ ul li {
 }
 
 ul li a {
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
     color: rgb(34, 34, 34);
 }
 
@@ -74,21 +74,22 @@ ul li a:hover {
 }
 
 .TextSize1 {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .TextSize2 {
-    color: rgb(50, 50, 50);
+    color: #222;
     font-weight: 600;
 }
 
 .TextSize3 {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     color: #808080;
     margin-bottom: 50px;
 }
 
+/* Dn stands for Download / VFD stands for View full details */
 .DN-VFD-Button {
     color: white;
     background-image: linear-gradient(to right, #8490ff, #4eb4fc);
@@ -96,10 +97,11 @@ ul li a:hover {
 }
 .DN-VFD-Button:hover {
     cursor: pointer;
-    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 17px 30px rgba(68, 68, 68, 0.2);
+    transition: .5s;
 }
 
-/* this is me */
+/* this is me  / tim stands for This is me*/
 
 .tim-left,
 .tim-right {
@@ -212,12 +214,13 @@ ul li a:hover {
 
 .featured-projects p:first-of-type{
     font-weight: 700;
-    font-size: 55px;
+    font-size: 48px;
 }
 
 .featured-projects p:last-of-type{
     padding: 15px 0;
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 300;
     color: #808080;
 }
 
@@ -228,7 +231,7 @@ ul li a:hover {
 .fp-titles a{
     color: black;
     margin: 20px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .fp-titles a::selection{
