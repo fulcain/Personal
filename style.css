@@ -6,7 +6,6 @@
 
 body {
     margin: 0;
-    padding: 0;
 }
 
 a {
@@ -43,29 +42,49 @@ header .container div {
 }
 
 /* header navbar */
-
-ul {
+.header-nav i {
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: 300;
+}
+.header-nav ul {
     padding: 0;
     margin: 0;
 }
 
-ul li {
+.header-nav ul li {
     margin-left: 30px;
     list-style: none;
     display: inline;
 }
 
-ul li a {
-    font-weight: 400;
-    font-size: 14px;
+.header-nav ul li a {
+    font-weight: 500;
+    font-size: 16px;
     color: rgb(34, 34, 34);
 }
 
-ul li a:hover {
+.header-nav ul li a:hover {
     color: #8490ff;
 }
 
-/* This is me and About me similar */
+/* Drop downmenu */
+.header-nav > ul > li{
+    position: relative;
+}
+.header-nav > ul > li > ul {
+    min-width: 300px;
+    background-color: white;
+    right: 0;
+    position: absolute;
+}
+.header-nav > ul > li > ul a{
+    display:flex;
+    padding: 0px 200px 0px 10px;
+    flex-direction: column;
+}
+
+/* This is me and About me similar css */
 
 .ThisIsMe .container,
 .AboutMe .container {
