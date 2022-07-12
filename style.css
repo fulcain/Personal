@@ -157,10 +157,14 @@ ul li a:hover {
 /* services */
 
 .services {
+    margin-bottom: 50px;
     width: 30%;
     height: 30%;
 }
 
+.services i{
+    font-size: 40px;
+}
 .services h3 {
     color: black;
     font-weight: 600;
@@ -171,8 +175,13 @@ ul li a:hover {
     font-size: 17px;
 }
 
-.services h3:hover {
+.services:hover  {
     cursor: pointer;
+}
+.services:hover h3{
+    color: #8490ff;
+}
+.services:hover i{
     color: #8490ff;
 }
 
