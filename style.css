@@ -37,7 +37,7 @@ header .container {
     justify-content: space-between;
 }
 
-header .container div {
+header .container > div {
     padding: 20px 0;
 }
 
@@ -47,20 +47,21 @@ header .container div {
     font-size: 20px;
     font-weight: 300;
 }
-.header-nav ul {
+.header-nav > ul {
     padding: 0;
     margin: 0;
 }
 
-.header-nav ul li {
+.header-nav > ul > li {
     margin-left: 30px;
     list-style: none;
     display: inline;
+    position: relative;
 }
 
 .header-nav ul li a {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(34, 34, 34);
 }
 
@@ -69,20 +70,24 @@ header .container div {
 }
 
 /* Drop downmenu */
-.header-nav > ul > li{
-    position: relative;
-}
-.header-nav > ul > li > ul {
-    min-width: 300px;
+.header-nav ul > li > ul{
     background-color: white;
+    min-width: 300px;
     right: 0;
+    top: 200%;
+    width: 100%;
     position: absolute;
+    display: none;
 }
-.header-nav > ul > li > ul a{
-    display:flex;
-    padding: 0px 200px 0px 10px;
+.header-nav ul > li > ul > li {
+    display: flex;
     flex-direction: column;
 }
+
+.header-nav > ul > li:hover > ul{
+    display: block;
+}
+
 
 /* This is me and About me similar css */
 
@@ -130,7 +135,7 @@ header .container div {
 }
 
 .ThisIsMe {
-    background-color: rgb(244, 244, 244);
+    background-color: #ebebeb;
 }
 
 .tim-left .TextSize2 {
