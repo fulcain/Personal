@@ -362,6 +362,9 @@ header .container {
 .main-image:hover .cover-image{
     display: flex;
 }
+.fp-images > div > div > i{
+    font-size: 50px;
+}
 .fp-images > div > div{
     align-items: center;
     justify-content: space-around;
@@ -371,7 +374,9 @@ header .container {
     height: 340px;
     position: absolute;
     display: flex;
+    border-radius: 10px;
 }
+
 .fp-images > div > div:hover{
     cursor: pointer;
     transition: 0.3s ease-in;
