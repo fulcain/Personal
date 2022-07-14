@@ -384,7 +384,7 @@ header .container {
 .plans-price {
     margin-top: 40px;
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(21, 21, 21);
 }
 
@@ -432,26 +432,37 @@ header .container {
 
 /* type of plans hover */
 
+/* the whole plan box */
 .type-of-plans:hover {
     cursor: pointer;
     background-image: linear-gradient(to right, #8490ff, #4eb4fc);
     transition: 1s;
     transform: scale(1.1);
 }
-
+/* description */
 .type-of-plans:hover .plans-description p{
     border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-.type-of-plans:hover .plans-price {
-    background-color: white;
+/* price */
+.plans-price::before{
+    content: '£199.00';
+}
+.type-of-plans:hover .plans-price:before{
     color: black;
+    background-color: white;
+    content: 'BUY NOW';
+    display: flex;
+    justify-content: space-around;
+   padding: 20px 50px;
+    font-size: 17px;
 }
 
+/* all p's */
 .type-of-plans:hover p {
     color: white;
 }
-
+/* the boxes around number */
 .type-of-plans:hover .plans-inner-box{
     background-image: linear-gradient(to right, #8490ff, #4eb4fc);
 }
