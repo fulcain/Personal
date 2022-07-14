@@ -1,3 +1,6 @@
+:root{
+    --gradiant-color:linear-gradient(to right, #8490ff, #4eb4fc);
+}
 /* General  */
 * {
     box-sizing: border-box;
@@ -21,6 +24,8 @@ p {
     padding: 0;
     margin: 0;
 }
+
+/* General end */
 
 /* header */
 
@@ -56,13 +61,6 @@ header .container {
     padding: 0;
 }
 
-.header-nav > ul > li {
-
-    list-style: none;
-    display: inline;
-    position: relative;
-}
-
 .header-nav > ul > li > a {
     padding: 30px 15px;
     font-weight: 500;
@@ -84,31 +82,41 @@ header .container {
     position: absolute;
     display: none;
 }
-.header-nav ul > li > ul > li {
-    
+.header-nav ul > li > ul > li { 
     display: flex;
     flex-direction: column;
 }
 .header-nav ul > li > ul > li a{
     padding: 10px 50px 5px 10px;
 }
-/* level 1 hover */
+/* drop down hover */
+
+/* level 1 */
+.header-nav > ul > li {
+
+    list-style: none;
+    display: inline;
+    position: relative;
+}
 .header-nav > ul > li:hover > ul{
     display: block;
 }
+
+/* level 2 */
+.header-nav > ul > li > ul > li {
+    position: relative;
+}
+
 .header-nav > ul > li > ul > li:hover > ul{
     display: block;
 
-}
-.header-nav > ul > li > ul > li {
-    position: relative;
 }
 .header-nav > ul > li > ul > li > ul {
     position: absolute;
     right: 100%;
     top:0;
 }
-/* level 2 hover */
+
 
 
 /* This is me and About me similar css */
@@ -139,7 +147,7 @@ header .container {
 /* Dn stands for Download / VFD stands for View full details */
 .DN-VFD-Button {
     color: white;
-    background-image: linear-gradient(to right, #8490ff, #4eb4fc);
+    background-image: var(--gradiant-color);
     padding: 15px 40px;
 }
 
@@ -239,7 +247,7 @@ header .container {
 
 .stats-box {
     margin: 50px 0;
-    background-image: linear-gradient(to right, #8490ff, #4eb4fc);
+    background-image: var(--gradiant-color);
 }
 
 .stats-box .container {
@@ -320,6 +328,13 @@ header .container {
     transform: scale(1); 
 }
 
+/* fp images  */
+
+.fp-images > div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
 .fp-images {
     margin-top: 30px;
@@ -342,17 +357,25 @@ header .container {
     color: #808080;
 }
 
-.fp-images img {
-    background: none;
-    width: 100%;
-    display: block;
-}
+/* fp images hover */
 
-.fp-images img:hover {
-    transition: 1s;
-    background: #4eb4fc;
-    background: linear-gradient(to right, #8490ff, #4eb4fc);
+.main-image:hover .cover-image{
+    display: flex;
+}
+.fp-images > div > div{
+    align-items: center;
+    justify-content: space-around;
+    background-image: var(--gradiant-color);
+    opacity: 0;
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    display: flex;
+}
+.fp-images > div > div:hover{
     cursor: pointer;
+    transition: 0.3s ease-in;
+    opacity: 0.7;
 }
 
 /* Plans */
@@ -435,7 +458,7 @@ header .container {
 /* the whole plan box */
 .type-of-plans:hover {
     cursor: pointer;
-    background-image: linear-gradient(to right, #8490ff, #4eb4fc);
+    background-image: var(--gradiant-color);
     transition: 1s;
     transform: scale(1.1);
 }
@@ -464,9 +487,9 @@ header .container {
 }
 /* the boxes around number */
 .type-of-plans:hover .plans-inner-box{
-    background-image: linear-gradient(to right, #8490ff, #4eb4fc);
+    background-image: var(--gradiant-color);
 }
 
 .type-of-plans:hover .plans-outer-box{
-    background-image: linear-gradient(to right, #8bbffa, #9ecbff);
+    background-image: var(--gradiant-color);
 }
