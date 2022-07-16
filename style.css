@@ -117,6 +117,7 @@ header .container {
     top:0;
 }
 
+/* header end */
 
 
 /* This is me and About me similar css */
@@ -172,6 +173,8 @@ header .container {
     font-size: 70px;
 }
 
+/* this is me end */
+
 /* About me */
 
 .AboutMe {
@@ -184,6 +187,29 @@ header .container {
 
 .AM-right .TextSize2 {
     font-size: 57px;
+}
+/* About me end */
+
+
+/* services */
+
+.services {
+    margin-bottom: 50px;
+    width: 30%;
+    height: 30%;
+}
+
+.services i{
+    font-size: 35px;
+}
+.services h3 {
+    color: black;
+    font-weight: 600;
+}
+
+.services p {
+    color: #808080;
+    font-size: 17px;
 }
 
 /* services title */
@@ -208,27 +234,6 @@ header .container {
     flex-wrap: wrap;
 }
 
-/* services */
-
-.services {
-    margin-bottom: 50px;
-    width: 30%;
-    height: 30%;
-}
-
-.services i{
-    font-size: 35px;
-}
-.services h3 {
-    color: black;
-    font-weight: 600;
-}
-
-.services p {
-    color: #808080;
-    font-size: 17px;
-}
-
 /* services hover */
 
 .services:hover  {
@@ -242,6 +247,8 @@ header .container {
 .services:hover i{
     color: #8490ff;
 }
+
+/* services end */
 
 /* stats */
 
@@ -274,6 +281,7 @@ header .container {
 .stats-box div {
     padding: 30px;
 }
+/* stats end */
 
 /* latest featured projects */
 
@@ -294,6 +302,7 @@ header .container {
 }
 
 /* fp descriptions / titles / images */
+/* fp stands for featured projects */
 .fp-descriptions {
     margin-bottom: 40px;
 }
@@ -363,6 +372,7 @@ header .container {
     display: flex;
 }
 .fp-images > div > div > i{
+    color: white;
     font-size: 50px;
 }
 .fp-images > div > div{
@@ -382,6 +392,7 @@ header .container {
     transition: 0.3s ease-in;
     opacity: 0.7;
 }
+/* featured projects end*/
 
 /* Plans */
 
@@ -497,4 +508,60 @@ header .container {
 
 .type-of-plans:hover .plans-outer-box{
     background-image: var(--gradiant-color);
+}
+
+/* plans end */
+
+/* Latest Posts  */
+/* lp stands for Latest Posts  */
+.lates-posts{
+    background-color: #f9f9ff;
+}
+.lates-posts  .container > p{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.lates-posts .container > p:first-of-type{
+    padding-top: 60px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #222;
+}
+
+.lates-posts .container > p:last-of-type{
+    margin: 10px 0 50px;
+    font-size: 16px;
+    color: #808080;
+}
+
+/* lp-boxes */
+.lp-relavive-box{
+    display: flex;
+}
+.lp-boxes {
+    width: 35%;
+}
+
+/* lp-boxes-end */
+
+/* lp-post-info */
+.lp-post-info{
+    border-bottom: 1px solid black;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.lp-post-info span , i{
+    vertical-align: middle;
+}
+/* lp-post-info end */
+
+/* lp user info */
+.lp-user-info *{
+    vertical-align:middle;
+}
+.lp-user-info > img{
+    padding-right:5px ;
 }
