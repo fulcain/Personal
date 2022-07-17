@@ -675,4 +675,11 @@ footer{
     padding: 10px 100px 10px 10px;
 }
 /* Follow Me */
+.followMe a{
+    color: white;
+    padding-right: 10px;
+}
+.followMe a:hover{
+    color:#8490ff
+}
 /* footer end */
