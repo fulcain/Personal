@@ -369,19 +369,22 @@ header .container {
 /* fp images hover */
 
 .main-image:hover .cover-image{
-    display: flex;
+    /* display: flex; */
 }
 .fp-images > div > div > i{
     color: white;
     font-size: 50px;
+}
+.fp-images > div{
+    position: relative;
 }
 .fp-images > div > div{
     align-items: center;
     justify-content: space-around;
     background-image: var(--gradiant-color);
     opacity: 0;
-    width: 340px;
-    height: 340px;
+    width: 100%;
+    height:82%;
     position: absolute;
     display: flex;
     border-radius: 10px;
