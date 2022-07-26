@@ -416,6 +416,7 @@ header .container {
 
 .type-of-plans-box {
     margin-top: 50px;
+    margin-bottom: 130px;
     display: flex;
     justify-content: space-around;
     row-gap: 20px;
@@ -555,10 +556,7 @@ header .container {
 }
 
 .lates-posts .container>p:first-of-type {
-    padding-top: 60px;
-    font-size: 50px;
-    font-weight: 600;
-    color: #222;
+    padding-top: 100px;
 }
 
 .lates-posts .container>p:last-of-type {
