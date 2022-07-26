@@ -493,7 +493,7 @@ header .container {
 .type-of-plans:hover .plans-description p {
     border-top: 1px solid rgb(255, 255, 255);
 }
-.type-of-plans:hover .plans-description p {
+.type-of-plans:hover .plans-description p:last-of-type {
     border-bottom: 1px solid rgb(255, 255, 255);
 }
 
@@ -502,11 +502,12 @@ header .container {
 /* all prices */
 .plans-price{
     font-size: var(--font-2);
+    width: 100%;
 }
 .Economy::before {
     content: '£199.00';
 }
-.Bussiness::before {
+.Business::before {
     content: '£299.00';
 }
 .Premium::before {
@@ -521,8 +522,8 @@ header .container {
     background-color: white;
     content: 'BUY NOW';
     display: flex;
-    justify-content: space-around;
     padding: 10px 50px;
+    justify-content: space-around;
     font-size: var(--font-4);
 }
 
