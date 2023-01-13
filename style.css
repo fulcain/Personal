@@ -1,9 +1,9 @@
 :root {
     --gradiant-color: linear-gradient(to right, #8490ff, #4eb4fc);
-    --font-1:60px; 
-    --font-2:36px;
-    --font-3:18px;
-    --font-4:14px;
+    --font-1: 60px;
+    --font-2: 36px;
+    --font-3: 18px;
+    --font-4: 14px;
 }
 
 /* General  */
@@ -29,32 +29,40 @@ p {
     padding: 0;
     margin: 0;
 }
+
 /* all font sizes */
-.font-1{
+.font-1 {
     font-size: var(--font-1);
     font-weight: 600;
 }
-.font-2{
+
+.font-2 {
     font-size: var(--font-2);
     color: #222;
 }
-.font-3{
+
+.font-3 {
     font-size: var(--font-3);
 }
-.font-4{
+
+.font-4 {
     font-size: var(--font-4);
 }
-.weight400{
+
+.weight400 {
     color: #222;
     font-weight: 400;
 }
-.weight300{
+
+.weight300 {
     color: #777;
     font-weight: 300;
 }
-.weight600{
+
+.weight600 {
     font-weight: 600;
 }
+
 /* General end */
 
 /* header */
@@ -72,8 +80,16 @@ header .container {
     justify-content: space-between;
 }
 
+/* hamburger menu / header responsive nav START */
+.hamburger-menu,
+.header-responsive-nav {
+    display: none;
+}
+
+/* hamburger menu / header responsive nav END */
+
 /* header navbar general*/
-.header-nav ul {
+.all-header-navbars ul {
     list-style-type: none;
     padding: 0;
 
@@ -81,46 +97,46 @@ header .container {
     flex-direction: row;
 }
 
-.header-nav a {
+.all-header-navbars a {
     color: #222;
     font-size: 12px;
 }
 
-.header-nav ul li a:hover {
+.all-header-navbars ul li a:hover {
     color: #8490ff;
 }
 
 /* Drop downmenu level 1 */
-.header-nav>ul>li>a {
+.all-header-navbars>ul>li>a {
     padding: 10px;
     font-weight: 500;
     color: rgb(34, 34, 34);
 }
 
-.header-nav ul i {
+.all-header-navbars ul i {
     vertical-align: middle;
     font-size: 20px;
     font-weight: 300;
 }
 
 /* general drop down menu */
-.header-nav li {
+.all-header-navbars li {
     position: relative;
 }
 
-.header-nav>ul ul {
+.all-header-navbars>ul ul {
     display: flex;
     flex-direction: column;
     position: absolute;
     padding: 10px;
 }
 
-.header-nav ul>li li {
+.all-header-navbars ul>li li {
     padding: 5px 120px 5px 10px;
 }
 
 /* drop downmenu level 2 and 3 */
-.header-nav ul>li ul {
+.all-header-navbars ul>li ul {
     box-shadow: 10px 10px 50px rgba(147, 146, 147, 0.3);
     background-color: white;
     min-width: max-content;
@@ -134,29 +150,73 @@ header .container {
 }
 
 /* Drop downmenu level 2 */
-.header-nav ul>li>ul {
+.all-header-navbars ul>li>ul {
     right: 0;
     top: 170%;
 }
 
-.header-nav>ul>li:hover>ul {
+.all-header-navbars>ul>li:hover>ul {
     opacity: 1;
     visibility: visible;
 }
 
 /* Drop downmenu level 3 */
-.header-nav>ul>li>ul>li>ul {
-
+.all-header-navbars>ul>li>ul>li>ul {
     right: 105%;
     top: 0;
 }
 
-.header-nav>ul>li>ul>li:hover>ul {
+.all-header-navbars>ul>li>ul>li:hover>ul {
     visibility: visible;
     opacity: 1;
 
 }
 
+/* header responsive navbar START */
+.header-responsive-nav {
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-right: -60px;
+}
+
+.header-responsive-nav ul {
+    flex-direction: column;
+
+}
+
+.header-responsive-nav ul li {
+    background-color: rgb(206, 206, 206);
+    margin: 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.header-responsive-nav>ul>li>ul {
+    z-index: 1;
+    top: 0;
+    right: 100%;
+}
+
+.header-responsive-nav>ul>li>ul>li{
+    padding: 10px;
+}
+.header-responsive-nav>ul>li>ul>li>ul>li {
+    padding: 10px;
+
+}
+
+.header-responsive-nav ul li a {
+    color: black;
+}
+
+.header-responsive-nav ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* header responsive navbar END */
 
 
 /* header end */
@@ -170,7 +230,9 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
-.ThisIsMe p:last-of-type , .AboutMe p:last-of-type{
+
+.ThisIsMe p:last-of-type,
+.AboutMe p:last-of-type {
     margin-bottom: 35px;
 }
 
@@ -211,7 +273,8 @@ header .container {
 .AM-right * {
     vertical-align: top;
 }
-.AM-right .font-2{
+
+.AM-right .font-2 {
     margin-top: 30px;
     margin-bottom: 40px;
 }
@@ -235,7 +298,8 @@ header .container {
     color: black;
     font-weight: 600;
 }
-.services-title p:last-of-type{
+
+.services-title p:last-of-type {
     margin-bottom: 70px;
 }
 
@@ -317,7 +381,7 @@ header .container {
 /* fp descriptions / titles / images */
 /* fp stands for featured projects */
 .fp-descriptions {
-    margin-bottom:100px;
+    margin-bottom: 100px;
 }
 
 .fp-titles a:first-of-type {
@@ -326,9 +390,13 @@ header .container {
 
 
 /* fp titles */
-.fp-titles{
+.fp-titles {
     margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 .fp-titles a {
     position: relative;
     color: black;
@@ -433,7 +501,7 @@ header .container {
 }
 
 .plans-name {
-    margin-top: 20px ;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: var(--font-3);
 }
@@ -454,7 +522,8 @@ header .container {
     color: #808080;
     padding: 10px;
 }
-.plans-description p:last-of-type{
+
+.plans-description p:last-of-type {
     border-bottom: 1px solid rgb(194, 194, 194, .5);
 }
 
@@ -494,6 +563,7 @@ header .container {
 .type-of-plans:hover .plans-description p {
     border-top: 1px solid rgb(255, 255, 255);
 }
+
 .type-of-plans:hover .plans-description p:last-of-type {
     border-bottom: 1px solid rgb(255, 255, 255);
 }
@@ -501,22 +571,27 @@ header .container {
 
 
 /* all prices */
-.plans-price{
+.plans-price {
     font-size: var(--font-2);
     width: 100%;
 }
+
 .Economy::before {
     content: '£199.00';
 }
+
 .Business::before {
     content: '£299.00';
 }
+
 .Premium::before {
     content: '£399.00';
 }
+
 .Exclusive::before {
     content: '£499.00';
 }
+
 /* price */
 .type-of-plans:hover .plans-price:before {
     color: black;
@@ -741,3 +816,155 @@ footer {
 }
 
 /* footer end */
+
+/* responsive */
+
+@media screen and (max-width:1024px) {
+
+    .container {
+        width: 900px;
+    }
+    .fp-images img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    header .container {
+        padding: 10px;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+
+    }
+
+    .hamburger-menu {
+        cursor: pointer;
+        display: flex;
+    }
+
+    .hamburger-menu:hover.header-responsive-nav {
+        display: flex;
+    }
+
+    .header-responsive-nav {
+        position: absolute;
+        right: 10px;
+        top: 40px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .container {
+        width: 650px;
+    }
+
+    .tim-right img {
+        width: 350px;
+    }
+
+    .AM-left img {
+        width: 400px;
+    }
+
+    .fp-images img {
+        width: 300px;
+    }
+
+    .lp-relavive-box {
+        flex-direction: column;
+    }
+
+    .lp-boxes {
+        width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:425px) {
+    :root {
+        --font-1: 40px;
+    }
+
+    header .container {
+        width: 400px;
+    }
+
+    .header-responsive-nav {
+
+        right: 50px;
+        top: 40px;
+    }
+
+    .container {
+        width: 390px;
+    }
+    
+.ThisIsMe .container,
+.AboutMe .container {
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.stats-box .container {
+   flex-direction: column;
+}
+.fp-titles{
+    display: flex;
+}
+.fp-images{
+    flex-direction: column;
+    align-items: center;
+}
+.type-of-plans-box{
+    flex-direction: column;
+    align-items: center;
+}
+.brands-box img{
+    width: 50px;
+}
+}
+@media screen and (max-width:375px){
+    :root {
+        --gradiant-color: linear-gradient(to right, #8490ff, #4eb4fc);
+        --font-1: 35px;
+        --font-2: 30px;
+        --font-3: 16px;
+        --font-4: 14px;
+    }
+    header .container{
+        width: 350px;
+    }
+    .container{
+        width:300px;
+    }
+    .DN-VFD-Button{
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+    .AM-left img {
+        width: 300px;
+    }
+    .tim-right img{
+        width: 300px;
+    }
+}
+@media screen and (max-width:350px){
+    header .container{
+        width: 300px;
+    }
+    .fp-titles{
+    }
+    .fp-titles a{
+        font-size: 10px;
+    }
+}

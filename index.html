@@ -13,7 +13,10 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,5001,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="images/ico.png">
-    <link rel="stylesheet" href="accest/style.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- js -->
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,8 +33,13 @@
                     <img src="images/logo.png" alt="personal logo">
                 </a>
             </div>
+            <div class="hamburger-menu">
+                <i class="material-icons" id="hamburder-menu-icon">
+                    menu
+                </i>
+            </div>
             <!-- header nav -->
-            <div class="header-nav">
+            <div class="header-nav all-header-navbars">
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -63,6 +71,39 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
+            <div class="all-header-navbars header-responsive-nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li>
+                        <a href="#">BLOG <i class="material-icons">expand_more</i></a>
+                        <ul>
+                            <li><a href="#">Blog Home</a></li>
+                            <li><a href="#">Blog Single </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">PAGES <i class="material-icons">expand_more</i></a>
+                        <ul>
+                            <li><a href="#">Elemet</a></li>
+                            <li>
+                                <a href="#">Level 2
+                                    <i class="material-icons">chevron_right</i>
+                                </a>
+                                <ul>
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
         </div>
     </header>
     <!-- header end -->
@@ -164,7 +205,7 @@
         <div class="container">
             <div>
                 <p>2536 </p>
-                <p> Project Completed</p>
+                <p>Project Completed</p>
             </div>
             <div>
                 <p>6784</p>
@@ -352,7 +393,8 @@
     <div class="lates-posts">
         <div class="container">
             <p class="font-2 weight600">Latest Posts From Our Blog</p>
-            <p class="font-4 weight300">You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, <br>
+            <p class="font-4 weight300">You may be a skillful, effective employer but if you don’t trust your personnel
+                and the opposite, <br>
                 then the chances of improving and expanding the business</p>
             <div class="lp-relavive-box">
                 <!-- number 1 -->
@@ -461,8 +503,7 @@
                     utilities and present our top 3 list on our site for your <br>
                     convenience.</p>
                 <p>Copyright © All rights reserved <br>
-                    This template is made with <i class="material-icons">favorite</i> by <a href="#">Artūras &
-                        Giedrius</a></p>
+                    This template is made with <i class="material-icons">favorite</i> by <a href="https://github.com/fulcain">Majid Kargar</a></p>
             </div>
             <div class="Newsletter">
                 <p class="footer-p-size1">Newsletter</p>
@@ -484,7 +525,8 @@
         </div>
     </footer>
     <!-- footer end -->
-
+    <!-- js link -->
+    <script src="script.js"></script>
 </body>
 
 </html>
